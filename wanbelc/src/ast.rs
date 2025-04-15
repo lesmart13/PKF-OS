@@ -1,7 +1,8 @@
-#[derive(Debug)]
+#[derive(Debug, Clone)]
+
 pub enum Expr {
     Say(String),
-    Let(Sting, String),
+    Let(String, String),
     Get(String),
     IfEq(String, String, Box<Expr>),
     // FunDef(String, Vec<String>, Vec<Expr>),
