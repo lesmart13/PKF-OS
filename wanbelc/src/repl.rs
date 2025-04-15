@@ -12,10 +12,11 @@ pub fn start() {
             .read_line(&mut input)
             .unwrap(); // Read a line of input from the user
         
+        let mut input = String::new();
+        io::stdin().read_line(&mut input).unwrap();
         match parse($input) {
             Ok(ast) => eval(ast),
             Err(e) => eprintln!("Parse error: {}", e),
             }
         }
     }
-}
