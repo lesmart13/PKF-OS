@@ -1,7 +1,0 @@
-fun hello(name) {
-    say "Hello " + name
-}
-
-fun add(a, b) {
-    say a + b
-}
